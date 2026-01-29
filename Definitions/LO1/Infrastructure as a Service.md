@@ -1,0 +1,1 @@
+Offers virtualized computing resources over the internet. Provides IT infrastructure such as servers, storage, networking, and operating systems. With IaaS the user is responsible for everything except for the physical hardware which is provided by the service provider.

@@ -1,0 +1,1 @@
+Combines the elements of public and private clouds, allowing data and applications to move between them seamlessly this. This flexible architecture reflects the strengths of the public cloud vs. private cloud vs. hybrid cloud models supporting sensitive workloads in a private cloud while using the public cloud for scalability, testing or backup.

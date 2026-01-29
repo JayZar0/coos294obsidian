@@ -1,0 +1,1 @@
+Typically owned and operated by a third-party provider that delivers computing resources over the internet. These resources are shared in a multitenant environment, meaning multiple organizations use the same physical infrastructure. However each customer's data and workloads are logically isolated to ensure privacy and security.

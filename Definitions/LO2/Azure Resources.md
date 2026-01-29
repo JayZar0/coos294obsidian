@@ -1,0 +1,1 @@
+Manageable item that is available through Azure. Can be items such as VMs, storage accounts, web apps, databases, and virtual networks, etc.

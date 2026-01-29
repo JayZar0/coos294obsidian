@@ -1,0 +1,157 @@
+Understand Microsoft Entra ID
+---
+- Microsoft Entra ID is a platform as a service operating as a Microsoft managed directory service in the cloud.
+- A few bonuses of Entra over AD DS is you have access to multi-factor authentication, identity protection and self-service password reset.
+- Microsoft Entra [[Tenants]]
+	- Multi-tenant by design to ensure isolation between each instance of a directory
+	- An Azure account can have multiple tenants
+	- Each tenant is assigned a DNS consisting of a unique prefix followed by onmicrosoft.com
+- Microsoft Entra schema 
+	- easily extensible and reversible from the extensions
+	- doesn't contain organizational units
+	- provides directory services, storing and publishing user, device, and application data; and handling the authentication and authorization of the users, devices and applications
+- AD DS
+	- can be deployed on an Azure VM to enable scalability and availability for an on-premises AD DS, however, deploying AD DS on an Azure vm doesn't make any use of Microsoft Entra ID
+- Entra as a directory service for cloud apps
+	- Need to have directory services in the cloud to provide authentication and authorization for these services
+- Compare P1 and P2 plans
+	- P1
+		- Self-service group management, advanced security reports and alerts, MFA, Microsoft Identity Manager(MIM) Licensing, Self service pasword reset with writeback, cloud app discovery, conditional access based on device, and Microsoft Entra Connect Health
+	- P2
+		- In addition to the P1 features adds Entra ID Protection, and Privileged Identity management
+- Entra Domain Service Limitations
+	- Only the base computer Active Directory object is supported
+	- Not possible to extend the schema for the Microsoft Entra Domain Services domain.
+	- OU structure is flat and nested OUs aren't supported
+	- Not possible to target OUs with built-in GPOs
+
+Configure Subscriptions
+---
+- Review From LO2
+	- [[Regions]]
+	- [[Region Pairs]]
+- Directories, subscriptions and users
+	- Tenant represents the organization and the default directory assigned to it
+	- Subscription is both a billing entity and a security boundary
+	- Can add users and groups to multiple subscriptions which allows them to create, control and access resources in the subscription
+	- When adding a user to a subscription, user must be known to the associated directory
+- What to consider when using regions and pairs
+	- Resource and region deployment
+	- Service support by region
+	- Services that don't require regions
+	- Exceptions to region pairing
+	- Benefits to data residency
+- Implement Azure Subscriptions
+	- Can organize access to azure cloud service resources and help control how resource usage is reported, billed and paid
+
+Configure Azure Policy
+---
+- Azure Policy
+	- Service to create assign and manage policies to control or audit resources
+	- Policies enforce different rules based on the resource configuration to ensure compliance with corporate standards
+	- Main advantages of Azure policy are in the areas of enforcement and compliance, scaling and remediation.
+	- Important for teams that run an environment that requires different forms of governance
+- Management Groups
+	- Provides a level of scope and control above subscriptions
+	- An efficient way to manage access, policies and compliance across subscriptions
+	- By default they are places under the top-level management group (root level)
+	- A group tree can support up to six levels in depth
+- Creating Azure Policies
+	- Use Azure Policy to create policies that define conventions for resources
+	- Describes compliance conditions for a resource and the actions
+
+Create, configure and manage identities
+---
+- Directories, subscriptions, and users
+	- A tenant represents the organization and the default directory assigned to it
+		- When a company signs up for these services they're assigned one of these default directories
+		- The directories will store users and groups that will have access to each of the services the company has purchased
+		- Multiple subscriptions can trust the same directory, but a subscription can only trust one directory
+		- Users and groups can be under multiple subscriptions
+			- This allows the user to create, control and access resources in the subscription
+	- Switching directories
+		- An account can store up to multiple directories
+	- Users
+		- Once authenticated, Microsoft Entra ID generates a token to authorize you and determine what resources you have access to
+		- Entra admin center is an identity portal for Microsoft Entra products
+		- The three users are defined by
+			- Cloud identities
+				- They only exist in Microsoft Entra ID
+			- Directory Synchronized identities
+				- These accounts also exist on the active directory and are synced to the cloud
+				- Their source is the Windows Server Active Directory
+			- Guest Users
+				- These accounts are added through being an invited user
+				- Useful for when external members require access to the Azure resources
+		- Can add cloud identities to Microsoft Entra ID in multiple ways
+			- Inviting users into a directory
+				- Entra admin center
+				- Sending email to known email address
+				- Command line
+	- Groups
+		- Groups help organize users to manage permissions more efficiently
+		- Lets resources owners set access permissions to the whole group rather than individual members
+		- Allows you to define a security boundary then add or remove specific users to grant or deny access with a minimum amount of effort
+		- Group Types
+			- Security Groups
+				- Most common type of group, used to manage member and computer access to shared resources for a group of users
+			- Microsoft 365 Groups
+				- Provides collaboration opportunities by giving members access to a shared mailbox, calendar, files, SharePoint site, and more
+				- Allows you to share access to people outside of the organization
+		- Adding groups to Entra ID
+			- Admin center is the easiest way to do create groups
+		- Group Memberships
+			- Assigned
+			- Dynamic User
+			- Dynamic Device
+	- Azure Device Registration
+		- Entra provides SSO to devices, apps, services from anywhere on the device
+		- Administrators can secure and control entra registered devices using the Mobile Device Management (MDM) tools like Intune
+		- Entra Join
+			- Entra join is intended for organizations that want to be cloud-first or cloud-only
+			- enables access to both cloud and on-premises apps and resources
+			- signed in to using an organizational Microsoft Entra account
+			- All windows 10 devices can join entra with the exception of windows 10 home edition
+		- Hybrid Entra Join
+			- If your environment has an on-premises AD footprint and you want benefit from the capabilities provided by Microsoft Entra ID, can implement hybrid joined devices
+			- These devices are joined to both your on-premises and registered with the entra directory
+
+Secure your Azure Resources with Azure [[Role-Based Access Control (RBAC)]]
+---
+- What can I do with Azure RBAC?
+	- Allow one user to manage vms while another user manages virtual networks
+	- Allow database admins to manage SQL databases in a subscription
+	- Allow a user to manage all resources in a resource group, such as vms, websites and subnets
+	- Allow application to access all resources in a resource group
+- How does RBAC work?
+	- Create role assignments that control how permissions are enforced
+		- These assignments require three elements
+			- Security Principle (Who)
+				- The name of the user/group/application to grant access
+			- Role definition (What)
+				- A collection of permissions 
+				- Four Fundamental built-in roles
+					- Owner: Has full access to all resources, including the right to delegate access to others
+					- Contributor: Can create and manage all types of Azure resource , but can't grant access to others.
+					- Reader: Can view existing Azure resources
+					- User Access Administrator
+			- Scope (Where)
+				- Where access applies
+				- Can be specified at multiple levels
+		- Role Assignment
+			- The process of binding a role to a security principal at a particular scope for the purpose of granting access
+	- Azure RBAC is an allow model, because when you assign a role; RBAC allows performing certain actions, such as read, write or delete
+	- There are also NotActions used to create a set of not allowed permissions in RBAC
+
+Connect Active Directory To Microsoft Entra ID with Microsoft Entra Connect
+---
+- Microsoft Entra Connect
+	- Companies using on-premises solutions can integrate their existing users and groups with Microsoft Entra ID with Microsoft Entra Connect
+		- This is a free tool, that you can download and install to synchronize your local AD with your Azure Directory
+		- Microsoft Entra Connect provides users with a common identity between Microsoft 365, Azure and SaaS applications integrated with Entra ID to use in a hybrid identity environment
+		- Inclusions in Microsoft Entra Connect
+			- Sync services - Component is responsible for creating uses, groups and other objects. Also makes sure that identity information for your on-premises users and groups matches the information in the cloud
+			- Health Monitoring - Entra connect health supplies monitoring and a central location in the Azure portal for viewing this activity
+			- Active Directory Federation Services (AD FS) - Federation is an optional part of Microsoft Entra Connect, can use to configure a hybrid environment via an op-premises AD FS infrastructure
+			- Password Hash Synchronization - Sign-in method that synchronizes a hash of a user's on-premises Active Directory password with Microsoft Entra ID
+			- Pass-through authentication - Allows users to sign in to both on-premises and cloud-based applications using the same passwords. Reduces IT helpdesk costs, as users less likely to forget how to sign in. Provides an alternative to Password hash synchronization that allows organizations to enforce their security and password complexity policies

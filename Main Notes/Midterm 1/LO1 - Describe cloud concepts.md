@@ -1,0 +1,58 @@
+Describe Cloud Computing
+--
+- Cloud computing is delivery of computing services through the internet
+- **Physical**
+	- Physical power, security, maintenance and software is managed through the IT
+- **Cloud**
+	- Physical power, security, maintenance is managed through the service provider and software is managed through the IT
+- There are three types of cloud computing
+	- [[Infrastructure as a Service]] (IaaS) - Provider is only in charge of physical hardware, networking
+	- [[Platform as a Service]] (PaaS) - Provider is becomes responsible for physical computing, operating systems, middleware, development tools and business intelligence services
+	- [[Software as a Service]] (SaaS) - IT is in charge of software applications
+- **Cloud models**
+	- [[Public Cloud]]
+	- [[Private cloud]]
+	- [[Hybrid cloud]]
+	- [[Multi-Cloud]]
+- Public cloud providers
+	- Microsoft Azure
+	- Amazon Web Services
+	- Google Cloud Platform
+	- Oracle Cloud
+	- Alibaba Cloud
+- **Consumption based model**
+	- **Capital Expenditure (CapEx)** - one time, up-front transaction to secure tangible resources
+	- **Operating Expenses (OpEx)** - spending on services/products overtime
+	- Cloud falls under OpEx as it operates on a consumption-based model where the user will pay based on the amount of resources that are being used in the infrastructure.
+	- Allows to scale for what is needed for the business
+	
+Describe the Benefits of Using Cloud Services
+--
+- **High Availability**
+	- Uptime and availability is maximized as per the service-level agreements (SLAs).
+- **Scaling**
+	- **Vertical** - This is scaling a single machines CPU, memory or storage
+	- **Horizontal** - This is scaling the amount of machines in a system for distributing the load
+- **Reliability**
+	- Has multiple servers in different regions running in case a catastrophic event occurs
+- **Predictability**
+	- Performance can be predicted based on the resources needed
+	- Cost can be predicted based on the cost of the cloud spend
+- **Cloud features**
+	- **Templates** - helps ensure that all resources meet corporate standards and government requirements
+	- **Auditing** - helps flag resources that is out of compliance with corporate standards and provides migration strategies
+	- Software patches and updates apply automatically
+	- Typically well suited to handle attacks such as distributed denial of service(DDoS) as well
+
+Describe Cloud Service Types
+--
+- [[Infrastructure as a Service]]
+	- Equivalent of renting hardware from a datacenter
+	- Can be good for shifting a on-premises datacenter to the cloud
+	- You can create development and test environments for fast replication
+- [[Platform as a Service]]
+	- Best suited for completing a development environment
+	- Provides a framework that developers can build upon to develop or customize cloud-based applications
+- [[Software as a Service]]
+	- Equivalent of renting or using a fully developed application
+	- Requires the least amount of technical knowledge to employ

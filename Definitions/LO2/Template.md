@@ -1,0 +1,1 @@
+JSON file that defines one or more resources to deploy a resource group

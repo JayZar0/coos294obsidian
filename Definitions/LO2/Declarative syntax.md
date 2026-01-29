@@ -1,0 +1,1 @@
+Syntax that lets you state "Here is what I intend to create" without having to write the sequence of programming commands to create it
