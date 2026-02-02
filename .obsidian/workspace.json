@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Main Notes/Midterm 1/LO3 - Manage cloud identity services and governance.md",
-                "mode": "preview",
+                "file": "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
+                "mode": "source",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "LO3 - Manage cloud identity services and governance"
+              "title": "LO4 - Manage Cloud Storage Services"
             }
           }
         ]
@@ -195,7 +195,9 @@
   },
   "active": "d53d14768e86b023",
   "lastOpenFiles": [
+    "Definitions/LO4",
     "Main Notes/Midterm 1/LO3 - Manage cloud identity services and governance.md",
+    "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
     "Definitions/LO3/Untitled.md",
     "Untitled.base",
     "Definitions/LO3/Role-Based Access Control (RBAC).md",
@@ -224,8 +226,6 @@
     "Definitions/LO1/Platform as a Service.md",
     "Definitions/LO1/Infrastructure as a Service.md",
     "Definitions/LO2/Region Pairs.md",
-    "Definitions/LO2/Availability Zones.md",
-    "Definitions/LO2/Accounts.md",
     "Definitions/LO1",
     "Definitions/LO2",
     "Learning Outcum 2",
