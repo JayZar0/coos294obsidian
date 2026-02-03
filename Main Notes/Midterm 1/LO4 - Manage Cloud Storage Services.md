@@ -1,0 +1,30 @@
+Configure Storage Accounts
+---
+- Azure Storage
+	- Azure Storage is the cloud storage solution from Microsoft
+	- Developers can use for working data, including websites, mobile apps and desktop applications
+- Storage Categories
+	- VM Data
+	- Unstructured Data
+	- Structured Data
+- Storage Account Tiers
+	- Standard
+	- Premium
+- Azure Storage Services
+	- Blob Storage
+	- Files
+	- Queue Storage
+	- Table Storage
+- Replication Strategies
+	- Data in storage accounts are replicated for durability and high availability
+	- Copies data so that it's protected from planned or unplanned events.
+	- You can replicated data from the same datacenter, datacenters in the same region
+	- Locally redundant storage (LRS)
+	- Zone redundant storage (ZRS)
+	- Geo-redundant storage (GRS)
+	- Geo-Zone-redundant storage (GZRS)
+- Storage Account Types
+	- Standard General purpose v2
+	- Premium block blobs
+	- premium files shares
+	- premium page blob
