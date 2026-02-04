@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
+                "file": "readme.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "LO4 - Manage Cloud Storage Services"
+              "title": "readme"
             }
           },
           {
@@ -219,8 +219,9 @@
   },
   "active": "ab14cf73494961d2",
   "lastOpenFiles": [
-    "Definitions/LO4/Azure File Sync Agent.md",
     "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
+    "readme.md",
+    "Definitions/LO4/Azure File Sync Agent.md",
     "Definitions/LO4/Registered server.md",
     "Definitions/LO4/Sync Group.md",
     "Definitions/LO4/Storage Sync Service.md",
@@ -248,7 +249,6 @@
     "2026-01-08.md",
     "Definitions/LO3/Tenants.md",
     "Definitions/LO3",
-    "Definitions/LO2/Template.md",
     "Main Notes/Midterm 1",
     "Main Notes",
     "Definitions/LO1",
