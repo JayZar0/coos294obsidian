@@ -2,7 +2,7 @@ Understand Microsoft Entra ID
 ---
 - Microsoft Entra ID is a platform as a service operating as a Microsoft managed directory service in the cloud.
 - A few bonuses of Entra over AD DS is you have access to multi-factor authentication, identity protection and self-service password reset.
-- Microsoft Entra [[Tenants]]
+- Microsoft Entra [Tenants](../../Definitions/LO3/Tenants.md)
 	- Multi-tenant by design to ensure isolation between each instance of a directory
 	- An Azure account can have multiple tenants
 	- Each tenant is assigned a DNS consisting of a unique prefix followed by onmicrosoft.com
@@ -28,8 +28,8 @@ Understand Microsoft Entra ID
 Configure Subscriptions
 ---
 - Review From LO2
-	- [[Regions]]
-	- [[Region Pairs]]
+	- [Regions](../../Definitions/LO2/Regions.md)
+	- [Region Pairs](../../Definitions/LO2/Region%20Pairs.md)
 - Directories, subscriptions and users
 	- Tenant represents the organization and the default directory assigned to it
 	- Subscription is both a billing entity and a security boundary
@@ -116,7 +116,7 @@ Create, configure and manage identities
 			- If your environment has an on-premises AD footprint and you want benefit from the capabilities provided by Microsoft Entra ID, can implement hybrid joined devices
 			- These devices are joined to both your on-premises and registered with the entra directory
 
-Secure your Azure Resources with Azure [[Role-Based Access Control (RBAC)]]
+Secure your Azure Resources with Azure [Role-Based Access Control (RBAC)](../../Definitions/LO3/Role-Based%20Access%20Control%20(RBAC).md)
 ---
 - What can I do with Azure RBAC?
 	- Allow one user to manage vms while another user manages virtual networks

@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1a31daddd37ef8d0",
+        "id": "bb646ceff318421f",
         "type": "tabs",
         "children": [
           {
-            "id": "72822c599e2dc8be",
+            "id": "4f96dbdecc901073",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme.md",
+                "file": "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "readme"
+              "title": "LO4 - Manage Cloud Storage Services"
             }
           }
         ]
@@ -193,13 +193,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "72822c599e2dc8be",
+  "active": "4f96dbdecc901073",
   "lastOpenFiles": [
-    "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
-    "readme.md",
     "Main Notes/Midterm 1/LO3 - Manage cloud identity services and governance.md",
-    "\"Main.md",
+    "Main Notes/Midterm 1/LO2 - Describe Azure Architecture and Services.md",
     "Main Notes/Midterm 1/LO1 - Describe cloud concepts.md",
+    "Definitions/LO1/Infrastructure as a Service.md",
+    "readme.md",
+    "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
+    "\"Main.md",
     "Definitions/LO4/Registered server.md",
     "Definitions/LO4/Azure File Sync Agent.md",
     "Definitions/LO4/Sync Group.md",
@@ -220,10 +222,8 @@
     "Definitions/LO3/Role-Based Access Control (RBAC).md",
     "role-based access control.md",
     "Azure RBAC.md",
-    "Main Notes/Midterm 1/LO2 - Describe Azure Architecture and Services.md",
     "Definitions/LO2/Regions.md",
     "Raw Notes Canvas.canvas",
-    "2026-01-08.md",
     "Definitions/LO3",
     "Main Notes/Midterm 1",
     "Main Notes",

@@ -7,15 +7,15 @@ Describe the Core Architectural Components of Azure
 - Azure free student accounts have access to certain services for 12 months and 100$ in credits to use in the 12 months
 - Core architecture of Azure can be broken into 2 separate groupings
 	- Physical infrastructure
-		- [[Regions]]
-		- [[Availability Zones]] 
-		- [[Region Pairs]]
-		- [[Sovereign Regions]] 
+		- [Regions](../../Definitions/LO2/Regions.md)
+		- [Availability Zones](../../Definitions/LO2/Availability%20Zones.md)
+		- [Region Pairs](../../Definitions/LO2/Region%20Pairs.md)
+		- [Sovereign Regions](../../Definitions/LO2/Sovereign%20Regions.md)
 	- Management infrastructure
-		- [[Azure resources]] 
-		- [[Resource Groups]] 
-		- [[Subscriptions]] 
-		- [[Accounts]] 
+		- [Azure Resources](../../Definitions/LO2/Azure%20Resources.md)
+		- [Resource Groups](../../Definitions/LO2/Resource%20Groups.md)
+		- [Subscriptions](../../Definitions/LO2/Subscriptions.md)
+		- [Accounts](../../Definitions/LO2/Accounts.md)
 - When creating a resource it is required that they are placed in a resource group
 	- A resource group can contain many resources while a resource can only be in one resource group
 	- Can't place a resource group in a resource group

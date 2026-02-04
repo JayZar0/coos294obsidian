@@ -6,14 +6,14 @@ Describe Cloud Computing
 - **Cloud**
 	- Physical power, security, maintenance is managed through the service provider and software is managed through the IT
 - There are three types of cloud computing
-	- [[Infrastructure as a Service]] (IaaS) - Provider is only in charge of physical hardware, networking
-	- [[Platform as a Service]] (PaaS) - Provider is becomes responsible for physical computing, operating systems, middleware, development tools and business intelligence services
-	- [[Software as a Service]] (SaaS) - IT is in charge of software applications
+	- [Infrastructure as a Service](../../Definitions/LO1/Infrastructure%20as%20a%20Service.md) (IaaS) - Provider is only in charge of physical hardware, networking
+	- [Platform as a Service](../../Definitions/LO1/Platform%20as%20a%20Service.md) (PaaS) - Provider is becomes responsible for physical computing, operating systems, middleware, development tools and business intelligence services
+	- [Software as a Service](../../Definitions/LO1/Software%20as%20a%20Service.md) (SaaS) - IT is in charge of software applications
 - **Cloud models**
-	- [[Public Cloud]]
-	- [[Private cloud]]
-	- [[Hybrid cloud]]
-	- [[Multi-Cloud]]
+	- [Public Cloud](../../Definitions/LO1/Public%20Cloud.md)
+	- [Private Cloud](../../Definitions/LO1/Private%20Cloud.md)
+	- [Hybrid Cloud](../../Definitions/LO1/Hybrid%20Cloud.md)
+	- [Multi-Cloud](../../Definitions/LO1/Multi-Cloud.md)
 - Public cloud providers
 	- Microsoft Azure
 	- Amazon Web Services
@@ -46,13 +46,13 @@ Describe the Benefits of Using Cloud Services
 
 Describe Cloud Service Types
 --
-- [[Infrastructure as a Service]]
+- [Infrastructure as a Service](../../Definitions/LO1/Infrastructure%20as%20a%20Service.md)
 	- Equivalent of renting hardware from a datacenter
 	- Can be good for shifting a on-premises datacenter to the cloud
 	- You can create development and test environments for fast replication
-- [[Platform as a Service]]
+- [Platform as a Service](../../Definitions/LO1/Platform%20as%20a%20Service.md)
 	- Best suited for completing a development environment
 	- Provides a framework that developers can build upon to develop or customize cloud-based applications
-- [[Software as a Service]]
+- [Software as a Service](../../Definitions/LO1/Software%20as%20a%20Service.md)
 	- Equivalent of renting or using a fully developed application
 	- Requires the least amount of technical knowledge to employ

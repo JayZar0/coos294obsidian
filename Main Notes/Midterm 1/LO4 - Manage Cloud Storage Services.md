@@ -5,26 +5,26 @@ Configure Storage Accounts
 	- Developers can use for working data, including websites, mobile apps and desktop applications
 	- Used by IaaS VMs, and PaaS cloud services
 - Storage Categories
-	- [[VM Data]]
-	- [[Unstructured Data]]
-	- [[Structured Data]]
+	- [VM Data](../../Definitions/LO4/VM%20Data.md)
+	- [Unstructured Data](../../Definitions/LO4/Unstructured%20Data.md)
+	- [Structured Data](../../Definitions/LO4/Structured%20Data.md)
 - Storage Account Tiers
 	- Standard
 		- Uses HDD drives however the pricing of GB is low making it good for applications that require bulk storage where data is not accessed frequently
 	- Premium
 		- Uses SSDs drives which provides low latency making it good for I/O intensive applications like databases
 - Azure Storage Services
-	- [[Blob Storage]] - Massively scalable object store for text and binary data
-	- [[Files]] - Managed file shares for cloud or on-premises deployments
-	- [[Queue Storage]] - Messaging store for reliable messaging between application components
-	- [[Table Storage]] - NoSQL store for shemaless storage of structured or relational data
+	- [Blob Storage](../../Definitions/LO4/Blob%20Storage.md) - Massively scalable object store for text and binary data
+	- [Files](../../Definitions/LO4/Files.md) - Managed file shares for cloud or on-premises deployments
+	- [Queue Storage](../../Definitions/LO4/Queue%20Storage.md) - Messaging store for reliable messaging between application components
+	- [Table Storage](../../Definitions/LO4/Table%20Storage.md) - NoSQL store for shemaless storage of structured or relational data
 - Replication Strategies
 	- Data in storage accounts are replicated for durability and high availability
 	- Copies data so that it's protected from planned or unplanned events.
 	- You can replicated data from the same datacenter, datacenters in the same region or across regions
-	- [[Locally redundant storage (LRS)]]
-	- [[Zone redundant storage (ZRS)]]
-	- [[Geo-redundant storage (GRS)]]
+	- [Locally redundant storage (LRS)](../../Definitions/LO4/Locally%20redundant%20storage%20(LRS).md)
+	- [Zone redundant storage (ZRS)](../../Definitions/LO4/Zone%20redundant%20storage%20(ZRS).md)
+	- [Geo-redundant storage (GRS)](../../Definitions/LO4/Geo-redundant%20storage%20(GRS).md)
 	- Geo-Zone-redundant storage (GZRS)
 - Storage Account Types
 	- Standard General purpose v2
@@ -97,10 +97,10 @@ Azure Files and Azure File Sync
 	- Transforms Windows Server into a quick cache of your Azure File shares
 	- Can use any protocol that's available on Windows server to access your data locally with Azure File Sync
 	- There are four main components to provide caching for Azure Files shares on an on-premises Windows Server
-		- [[Storage Sync Service]]
-		- [[Sync Group]]
-		- [[Azure File Sync agent]]
-		- [[Registered server]]
+		- [Storage Sync Service](../../Definitions/LO4/Storage%20Sync%20Service.md)
+		- [Sync Group](../../Definitions/LO4/Sync%20Group.md)
+		- [Azure File Sync Agent](../../Definitions/LO4/Azure%20File%20Sync%20Agent.md)
+		- [Registered server](../../Definitions/LO4/Registered%20server.md)
 
 Configure Azure Storage Security
 ---
