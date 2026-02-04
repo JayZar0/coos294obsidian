@@ -1,0 +1,2 @@
+Shares accessed by SMB protocol and NFS protocol.
+Storage account credentials are used to provide authentication for access to the file share. All users who have the share mounted should have full rw access to the share.

@@ -1,0 +1,1 @@
+Optimized for storing massive amounts of unstructured or non-relational data, such as text or binary data. Objects can be accessed through HTTP or HTTPS via URLs, the Azure Storage REST API, Azure PowerShell, Azure CLI or Azure Storage client library.

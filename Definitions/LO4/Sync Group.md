@@ -1,0 +1,1 @@
+Defines the sync topology for a set of files. Endpoints within a sync group are kept in sync with each other.

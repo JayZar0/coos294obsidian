@@ -1,0 +1,1 @@
+This strategy replicates data to a secondary region. This has a higher level of durability during a regional outage.

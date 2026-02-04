@@ -1,30 +1,129 @@
 Configure Storage Accounts
 ---
 - Azure Storage
-	- Azure Storage is the cloud storage solution from Microsoft
+	- Azure Storage is the cloud storage solution from Microsoft that can store files, messages, tables and other types of information
 	- Developers can use for working data, including websites, mobile apps and desktop applications
+	- Used by IaaS VMs, and PaaS cloud services
 - Storage Categories
-	- VM Data
-	- Unstructured Data
-	- Structured Data
+	- [[VM Data]]
+	- [[Unstructured Data]]
+	- [[Structured Data]]
 - Storage Account Tiers
 	- Standard
+		- Uses HDD drives however the pricing of GB is low making it good for applications that require bulk storage where data is not accessed frequently
 	- Premium
+		- Uses SSDs drives which provides low latency making it good for I/O intensive applications like databases
 - Azure Storage Services
-	- Blob Storage
-	- Files
-	- Queue Storage
-	- Table Storage
+	- [[Blob Storage]] - Massively scalable object store for text and binary data
+	- [[Files]] - Managed file shares for cloud or on-premises deployments
+	- [[Queue Storage]] - Messaging store for reliable messaging between application components
+	- [[Table Storage]] - NoSQL store for shemaless storage of structured or relational data
 - Replication Strategies
 	- Data in storage accounts are replicated for durability and high availability
 	- Copies data so that it's protected from planned or unplanned events.
-	- You can replicated data from the same datacenter, datacenters in the same region
-	- Locally redundant storage (LRS)
-	- Zone redundant storage (ZRS)
-	- Geo-redundant storage (GRS)
+	- You can replicated data from the same datacenter, datacenters in the same region or across regions
+	- [[Locally redundant storage (LRS)]]
+	- [[Zone redundant storage (ZRS)]]
+	- [[Geo-redundant storage (GRS)]]
 	- Geo-Zone-redundant storage (GZRS)
 - Storage Account Types
 	- Standard General purpose v2
 	- Premium block blobs
 	- premium files shares
 	- premium page blob
+- Accessing storage
+	- Every object stored in Azure storage has a unique URL address
+	- The storage account name forms the subdomain portion of the URL
+	- Combining the subdomain and the domain name forms the endpoint for a storage account
+
+Create An Azure Storage Account
+---
+- Storage Account
+	- A storage account is a container that groups a set of Azure storage services together
+	- Combining data services allows managing them as a group
+	- Each account represents a collection of settings like location, replication strategy, and subscription owner and it's best to create one for a new group of settings that will be applied to your data.
+
+Configure Azure Blob Storage
+---
+- Implementation of Blob Storages
+	- Blob storage uses three resources to store and manage your data
+		- Storage Account
+		- Containers in the Storage Account
+		- Blobs in the Container
+- Blob access tiers
+	- Hot
+		- Optimized for frequent rw of objects
+		- Low access cost however higher storage costs than cool and archive
+	- Cool
+		- Optimized for storing large amounts of data that doesn't get accessed frequently
+		- Useful for short-term backup and disaster recovery datasets and older media content
+		- More cost-effective
+	- Cold
+		- Optimized for the same reason as the cool tier
+		- Intended for data that can remain in the tier for at least 90 days
+	- Archive
+		- Offline tier that's optimized for data that can tolerate several hours of retrieval latency
+		- Includes secondary backups, original raw data and legally required compliance information
+- Blob Types
+	- Block Blobs
+		- Ideal for storing text and binary data in the cloud, like files, images, and videos
+	- Append Blobs
+		- Useful for logging scenarios, where the amount of data can increase as the logging operation continues
+	- Page Blobs
+		- More efficient for frequent read/write operations
+		- Azure VMs uses blobs for operating systems disks and data disks
+
+Azure Files and Azure File Sync
+---
+- On-premises applications can also access file data in the shares
+- Azure Files
+	- Works as a true directory object in file shares
+	- provides access to files across multiple vms
+	- Can be mounted in linux distros by using the CIFS kernel client
+	- Provides the capability to take snapshots of file shares
+		- minimise the time requires o create share snapshots and saves on storage costs
+- Azure File Shares
+	- Azure File shares uses the SMB protocol and the NFS protocol
+		- Doesn't support both protocols on the same file share
+	- Can create file shares within the same storage account
+	- There are two types of file shares
+		- Standard and premium
+		- The key differences are that premium uses SSDs and standard uses HDDs
+- Azure Storage Explorer
+	- Can access multiple accounts and subscriptions, and manage all your Storage content.
+- Azure File Sync
+	- Enables caching several Azure Files shares on an on-premises Windows Server or cloud virtual machine
+	- Centralize your organization's file shares in Azure Files, while keeping the flexibility, performance and compatibility of an on-premises file server
+	- Transforms Windows Server into a quick cache of your Azure File shares
+	- Can use any protocol that's available on Windows server to access your data locally with Azure File Sync
+	- There are four main components to provide caching for Azure Files shares on an on-premises Windows Server
+		- [[Storage Sync Service]]
+		- [[Sync Group]]
+		- [[Azure File Sync agent]]
+		- [[Registered server]]
+
+Configure Azure Storage Security
+---
+- Security Strategies
+	- Encryption - All data written to Azure Storage is automatically encrypted by using Azure Storage Encryption
+	- Data in transit - Data can be secured between an application and Azure using Client-Side Encryption, HTTPS, or SMB 3.0
+	- Disk Encryption - Operating System Disks and data disks used by Azure Virtual Machines can be encrypted by using Azure Disk Encryption
+	- Authentication - Azure Active Directory and role-based access control are supported for Azure Storage for both resource management operations and data operations
+	- Shared access signatures - Delagated access to the data objects in Azure Storage can be granted by using a shared access signature
+	- Authorization - Every request made against a secured resource in Blob Storage, Azure Files, Queue Storage, or Azure Table Storage must be authorized.
+- Authorization Options for Azure Storage
+	- Entra ID
+		- Option used to securely access Azure Storage without storing credentials in your code
+	- Shared Key
+		- Azure storage creates two 512 bit access keys for every storage account that's created
+		- These keys grant clients access to the storage account
+		- Microsoft recommends managing keys with Azure Key Vault since it's easy to rotate keys on a regular schedule to keep your storage account secure
+	- Shared Access Signatures
+		- Lets you grant granular access to files in Azure Storage, such as read-only or read-write access, expiration time, after which the SAS non longer enables the client to access the chosen resources
+		- Grants permission to a storage resource and should be protected in the same manner as an account key
+	- Anonymous access to containers and blobs
+- Azure Storage Encryption
+	- Data is encrypted automatically before it's persisted to their specified service
+	- Data is automatically decrypted before retrieval
+	- All data is encrypted through 256-bit AES encryption
+	- Encryption is enabled for all new existing storage accounts and can't be disabled

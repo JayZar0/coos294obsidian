@@ -1,0 +1,1 @@
+This the cheapest replication option however it offers the least durability compared to the other strategies.

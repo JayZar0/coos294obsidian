@@ -30,6 +30,30 @@
               "icon": "lucide-file",
               "title": "LO4 - Manage Cloud Storage Services"
             }
+          },
+          {
+            "id": "9d7ccc3961f769b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Definitions/LO4/Registered server.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Registered server"
+            }
           }
         ]
       }
@@ -193,11 +217,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d53d14768e86b023",
+  "active": "ab14cf73494961d2",
   "lastOpenFiles": [
-    "Definitions/LO4",
-    "Main Notes/Midterm 1/LO3 - Manage cloud identity services and governance.md",
+    "Definitions/LO4/Azure File Sync Agent.md",
     "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
+    "Definitions/LO4/Registered server.md",
+    "Definitions/LO4/Sync Group.md",
+    "Definitions/LO4/Storage Sync Service.md",
+    "Definitions/LO4/Geo-redundant storage (GRS).md",
+    "Definitions/LO4/Zone redundant storage (ZRS).md",
+    "Definitions/LO4/Locally redundant storage (LRS).md",
+    "Definitions/LO4/Queue Storage.md",
+    "Definitions/LO4/Table Storage.md",
+    "Definitions/LO4/Files.md",
+    "Definitions/LO4/Blob Storage.md",
+    "Definitions/LO4/VM Data.md",
+    "Definitions/LO4/Unstructured Data.md",
+    "Definitions/LO4/Structured Data.md",
+    "Main Notes/Midterm 1/LO3 - Manage cloud identity services and governance.md",
+    "Definitions/LO4",
     "Definitions/LO3/Untitled.md",
     "Untitled.base",
     "Definitions/LO3/Role-Based Access Control (RBAC).md",
@@ -211,26 +249,12 @@
     "Definitions/LO3/Tenants.md",
     "Definitions/LO3",
     "Definitions/LO2/Template.md",
-    "Definitions/LO2/Declarative syntax.md",
-    "Definitions/LO2/Resource Groups.md",
-    "Definitions/LO2/Resource Groups-DESKTOP-TQGKEKT.md",
-    "Definitions/LO2/Subscriptions.md",
-    "Definitions/LO2/Azure Resources.md",
     "Main Notes/Midterm 1",
-    "Definitions/LO1/Hybrid Cloud.md",
-    "Definitions/LO1/Multi-Cloud.md",
-    "Definitions/LO1/Public Cloud.md",
     "Main Notes",
-    "Definitions/LO1/Private Cloud.md",
-    "Definitions/LO1/Software as a Service.md",
-    "Definitions/LO1/Platform as a Service.md",
-    "Definitions/LO1/Infrastructure as a Service.md",
-    "Definitions/LO2/Region Pairs.md",
     "Definitions/LO1",
     "Definitions/LO2",
     "Learning Outcum 2",
     "Definitions",
-    "Learning Outcum 1",
-    "desktop.ini"
+    "Learning Outcum 1"
   ]
 }

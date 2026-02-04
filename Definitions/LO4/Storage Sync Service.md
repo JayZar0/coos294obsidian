@@ -1,0 +1,1 @@
+Top level Azure resource for Azure File Sync. This resource is a peer of the storage account resource and can be deployed in a similar manner.

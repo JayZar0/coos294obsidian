@@ -1,0 +1,1 @@
+This strategy asynchronously replicates data across three storage clusters in a single region. Each cluster is physically separated from the others and resides in its own availability zone. The ensures data access if a zone becomes unavailable.

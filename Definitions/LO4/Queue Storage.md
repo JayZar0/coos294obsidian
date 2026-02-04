@@ -1,0 +1,1 @@
+Stores and retrieve messages that can be up to 64 KB in size. Queues can store millions of messages and processes them asynchronously.

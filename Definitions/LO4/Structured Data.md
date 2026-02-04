@@ -1,0 +1,1 @@
+This data is stored in a relational format that has a shared schema. This data is often contained in a database table.

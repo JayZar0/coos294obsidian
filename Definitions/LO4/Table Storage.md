@@ -1,0 +1,1 @@
+Stores non-relational structured data in the cloud. Table storage is schemaless, easy to adapt data as the needs of an application evolve.

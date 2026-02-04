@@ -1,0 +1,1 @@
+Registered server object represents a trust relationship between your server and the Storage Sync Service resource. Can register as many servers to a Storage Sync Service resource as required.

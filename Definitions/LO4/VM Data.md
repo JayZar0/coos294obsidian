@@ -1,0 +1,1 @@
+Disks are persistent block storage for Azure IaaS VMs and the files are fully managed files shares in the cloud

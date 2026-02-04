@@ -1,0 +1,1 @@
+A downloadable package that enables Windows Server to be synced with an Azure Files Share
