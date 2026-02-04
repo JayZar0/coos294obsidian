@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
+                "mode": "preview",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "LO4 - Manage Cloud Storage Services"
+            }
+          },
+          {
+            "id": "72822c599e2dc8be",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "readme.md",
                 "mode": "preview",
                 "source": false,
@@ -31,7 +55,8 @@
               "title": "readme"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -193,14 +218,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "ab14cf73494961d2",
+  "active": "72822c599e2dc8be",
   "lastOpenFiles": [
-    "Main Notes/Midterm 1/LO3 - Manage cloud identity services and governance.md",
+    "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
     "readme.md",
+    "Main Notes/Midterm 1/LO3 - Manage cloud identity services and governance.md",
     "\"Main.md",
     "Main Notes/Midterm 1/LO1 - Describe cloud concepts.md",
     "Definitions/LO4/Registered server.md",
-    "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
     "Definitions/LO4/Azure File Sync Agent.md",
     "Definitions/LO4/Sync Group.md",
     "Definitions/LO4/Storage Sync Service.md",
