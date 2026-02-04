@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "readme.md",
+                "file": "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "readme"
+              "title": "LO4 - Manage Cloud Storage Services"
             }
           }
         ]
@@ -195,8 +195,8 @@
   },
   "active": "72822c599e2dc8be",
   "lastOpenFiles": [
-    "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
     "readme.md",
+    "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
     "Main Notes/Midterm 1/LO3 - Manage cloud identity services and governance.md",
     "\"Main.md",
     "Main Notes/Midterm 1/LO1 - Describe cloud concepts.md",
