@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false,
                 "backlinks": true,
                 "backlinkOpts": {
@@ -198,9 +198,9 @@
     "Main Notes/Midterm 1/LO3 - Manage cloud identity services and governance.md",
     "Main Notes/Midterm 1/LO2 - Describe Azure Architecture and Services.md",
     "Main Notes/Midterm 1/LO1 - Describe cloud concepts.md",
-    "Definitions/LO1/Infrastructure as a Service.md",
-    "readme.md",
     "Main Notes/Midterm 1/LO4 - Manage Cloud Storage Services.md",
+    "readme.md",
+    "Definitions/LO1/Infrastructure as a Service.md",
     "\"Main.md",
     "Definitions/LO4/Registered server.md",
     "Definitions/LO4/Azure File Sync Agent.md",
