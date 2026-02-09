@@ -25,7 +25,7 @@ Configure Storage Accounts
 	- [Locally redundant storage (LRS)](../../Definitions/LO4/Locally%20redundant%20storage%20(LRS).md)
 	- [Zone redundant storage (ZRS)](../../Definitions/LO4/Zone%20redundant%20storage%20(ZRS).md)
 	- [Geo-redundant storage (GRS)](../../Definitions/LO4/Geo-redundant%20storage%20(GRS).md)
-	- Geo-Zone-redundant storage (GZRS)
+	- [Geo-Zone-Redundant Storage (GZRS)](../../Definitions/LO4/Geo-Zone-Redundant%20Storage%20(GZRS).md)
 - Storage Account Types
 	- Standard General purpose v2
 	- Premium block blobs

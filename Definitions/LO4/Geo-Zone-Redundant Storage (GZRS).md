@@ -1,0 +1,1 @@
+This is a combination of Zone Redundant Storage and Geo redundant storage where the replication occurs between the availability zones of the selected region and the region pair along with it's availability zones.
